@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucha Canaria </title>
     <link rel="stylesheet" href="styles.css">
-    <title>Lucha Canaria</title>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="carousel-container">
-        <button class="carousel-button left" id="prevButton">&#10094;</button>
-        <div class="carousel">
-            <div class="carousel-track" id="carouselTrack">
-                <img class="carousel-item" src="./Assets/Fuerteventura.png" alt="Imagen 1">
-                <img class="carousel-item" src="./Assets/GranCanaria.png" alt="Imagen 2">
-                <img class="carousel-item" src="./Assets/Lanzarote.png" alt="Imagen 3">
-                <img class="carousel-item" src="./Assets/LaPalma.png" alt="Imagen 4">
-                <img class="carousel-item" src="./Assets/Tenerife.png" alt="Imagen 5">
+    <header class="main-header">
+        <h1>Lucha Canaria </h1>
+        <nav>
+            <button id="about">¿Quién soy?</button>
+            <button id="donate">Dona</button>
+        </nav>
+    </header>
+
+    <header class="sub-header">
+        <nav>
+            <a href="#historia">Historia</a>
+            <a href="#manas">Mañas</a>
+            <a href="#vestimentas">Vestimentas</a>
+            <a href="#equipos">Equipos</a>
+            <a href="#campos">Campos</a>
+            <a href="#reglamentos">Reglamentos</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <button class="carousel-button left" id="prevButton">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <img class="carousel-item" src="./Assets/Fuerteventura.png" alt="Imagen 1">
+                    <img class="carousel-item" src="./Assets/GranCanaria.png" alt="Imagen 2">
+                    <img class="carousel-item" src="./Assets/Lanzarote.png" alt="Imagen 3">
+                    <img class="carousel-item" src="./Assets/LaPalma.png" alt="Imagen 4">
+                    <img class="carousel-item" src="./Assets/Tenerife.png" alt="Imagen 5">
+                </div>
+                
+            </div>
+            <button class="carousel-button right" id="nextButton">&#10095;</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="./Assets/bandera.png" alt="Bandera" class="flag">
+            <div class="contacts">
+                <p>Contacto 1</p>
+                <p>Contacto 2</p>
             </div>
         </div>
-        <button class="carousel-button right" id="nextButton">&#10095;</button>
-    </div>
+        <hr>
+        <p class="privacy">Privacidad</p>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 
